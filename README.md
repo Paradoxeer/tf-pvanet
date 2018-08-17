@@ -45,3 +45,6 @@ sh ./scripts/train_pvanet.sh ${GPU} ${MODEL_DIR}
 ```
 sh ./scripts/test_pvanet.sh ${GPU} ${MODEL_DIR}
 ```
+
+## Performance
+* With concatenation the test precision can reach 91.1%. Without concatenation and keeps other parameters unchanged, the test precision is still 90.7%
