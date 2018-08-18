@@ -29,6 +29,7 @@ tf.app.flags.DEFINE_string('checkpoint_path', '', 'Directory if there are checkp
 tf.app.flags.DEFINE_string('log_root', '', 'log root to restore checkpoints')
 tf.app.flags.DEFINE_integer('num_gpus', 0,
                             'Number of gpus used for training. (0 or 1)')
+tf.app.flags.DEFINE_integer('batch_size', 100, 'Batch size for test data')
 tf.app.flags.DEFINE_integer('eval_batch_count', 50, 'the number of batches to evaluate')
 tf.app.flags.DEFINE_bool('eval_once', False, 'if evaluate only once')
 tf.app.flags.DEFINE_bool("ignore_missing_vars", False, '')
