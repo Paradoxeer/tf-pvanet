@@ -35,6 +35,7 @@ tf.app.flags.DEFINE_bool('eval_once', False, 'if evaluate only once')
 tf.app.flags.DEFINE_bool("ignore_missing_vars", False, '')
 tf.app.flags.DEFINE_string('checkpoint_exclude_scopes', None, 'checkpoint_exclude_scopes')
 
+tf.app.flags.DEFINE_float('weight_decay', 0.0005, 'The weight decay on the model weights.')
 
 FLAGS = tf.app.flags.FLAGS
 
