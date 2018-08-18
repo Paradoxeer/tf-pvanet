@@ -287,7 +287,7 @@ def pvanet(net, num_classes,
     conv2_setting = (12*fatness, 12*fatness, 32*fatness)
     conv2 = __conv_stage(pool1,
                         block_configs=[
-                            BlockConfig(2, conv2_setting, False, BLOCK_TYPE_MCRELU, proj_type),
+                            BlockConfig(1, conv2_setting, False, BLOCK_TYPE_MCRELU, proj_type),
                             BlockConfig(1, conv2_setting, True, BLOCK_TYPE_MCRELU, proj_type),
                             BlockConfig(1, conv2_setting, True, BLOCK_TYPE_MCRELU, proj_type)],
                         scope='conv2',
